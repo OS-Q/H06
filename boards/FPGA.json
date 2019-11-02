@@ -1,6 +1,6 @@
 {
   "build": {
-    "core": "icezum",
+    "core": "H4",
     "cpu": "fpga",
     "f_cpu": "12000000L",
     "hwids": [
@@ -15,11 +15,11 @@
     "type": "hx"
   },
   "frameworks": [],
-  "name": "IceZUM Alhambra FPGA",
+  "name": "H4 FPGA",
   "upload": {
     "maximum_ram_size": 32768,
     "maximum_size": 32768
   },
-  "url": "https://github.com/FPGAwars/icezum/wiki",
-  "vendor": "FPGAwars"
+  "url": "https://github.com/OS-Q/H4/wiki",
+  "vendor": "OS-Q"
 }

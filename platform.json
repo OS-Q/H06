@@ -1,7 +1,7 @@
-{
+ {
   "name": "H4",
   "title": "H4",
-  "description": "Lattice FPGA开发平台",
+  "description": "FPGA开发平台",
   "url": "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx",
   "homepage": "https://github.com/OS-Q/H4",
   "license": " ",
