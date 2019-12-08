@@ -1,6 +1,6 @@
 {
   "build": {
-    "core": "H4",
+    "core": "H06",
     "cpu": "fpga",
     "f_cpu": "12000000L",
     "hwids": [
@@ -15,11 +15,11 @@
     "type": "hx"
   },
   "frameworks": [],
-  "name": "H4 FPGA",
+  "name": "iCE40-HX1K-TQ144",
   "upload": {
     "maximum_ram_size": 32768,
     "maximum_size": 32768
   },
-  "url": "https://github.com/OS-Q/H4/wiki",
+  "url": "https://github.com/OS-Q/H06/wiki",
   "vendor": "OS-Q"
 }

@@ -1,3 +1,7 @@
 *.db
 *.yml
 __pycache__/
+*.pyc
+__pycache__
+.pio/
+.vscode/
