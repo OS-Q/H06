@@ -1,7 +1,7 @@
 from platformio.managers.platform import PlatformBase
 
 
-class H06Platform(PlatformBase):
+class P01Platform(PlatformBase):
 
     def is_embedded(self):
         return True

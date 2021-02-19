@@ -1,6 +1,6 @@
 {
   "build": {
-    "core": "H06",
+    "core": "P01",
     "cpu": "fpga",
     "f_cpu": "12000000L",
     "hwids": [
@@ -20,6 +20,6 @@
     "maximum_ram_size": 32768,
     "maximum_size": 32768
   },
-  "url": "https://github.com/OS-Q/H06/wiki",
+  "url": "https://github.com/OS-Q/P01/wiki",
   "vendor": "OS-Q"
 }
