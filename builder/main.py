@@ -7,8 +7,8 @@ from os.path import join
 from platform import system
 
 from SCons.Script import (COMMAND_LINE_TARGETS, AlwaysBuild, Builder, Default,
-                          DefaultEnvironment, Exit, GetOption,
-                          Glob)
+                            DefaultEnvironment, Exit, GetOption,
+                            Glob)
 
 env = DefaultEnvironment()
 pioPlatform = env.PioPlatform()
