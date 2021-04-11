@@ -65,4 +65,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: P01
-          path: ${{ matrix.examples }}/build
+          path: ${{ matrix.examples }}
