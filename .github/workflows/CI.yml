@@ -61,7 +61,6 @@ jobs:
       - name: Upload
         if: env.UPLOAD_BUILD == 'true' && steps.build.outputs.status == 'success' && !cancelled()
         uses: actions/upload-artifact@v2
-        if: matrix.tool == 'QIO' && matrix.os == 'ubuntu-latest'
         with:
           name: P01
           path: ${{ matrix.examples }}/build
