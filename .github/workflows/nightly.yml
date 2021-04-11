@@ -1,14 +1,8 @@
-name: CI
+name: nightly
 
 on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
-
-env:
-  UPLOAD_BUILD: true
+  schedule:
+    - cron: '0 11 * * *'
 
 jobs:
   build:
@@ -16,8 +10,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest]
-        python: [3.8]
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: [3.7,3.9]
         tool:
           - "PIO"
           - "QIO"
@@ -58,11 +52,3 @@ jobs:
         if: success()
         run: |
           pio run -d ${{ matrix.examples }}
-          echo "::set-output name=status::success"
-
-      - name: Upload
-        if: env.UPLOAD_BUILD == 'true' && steps.build.outputs.status == 'success' && matrix.tool == 'QIO'
-        uses: actions/upload-artifact@v2
-        with:
-          name: P01
-          path: ${{ matrix.examples }}
