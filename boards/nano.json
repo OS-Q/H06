@@ -9,13 +9,13 @@
         "0x6010"
       ]
     ],
-    "mcu": "iCE40-HX1K-TQ144",
-    "pack": "tq144",
+    "mcu": "iCE40-LP1K-CM36",
+    "pack": "cm36",
     "size": "1k",
     "type": "hx"
   },
   "frameworks": [],
-  "name": "iCE40-HX1K-TQ144",
+  "name": "icesugar-nano",
   "upload": {
     "maximum_ram_size": 32768,
     "maximum_size": 32768
