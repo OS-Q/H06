@@ -8,7 +8,7 @@ on:
       - '**.md'
 
 env:
-  UPLOAD_BUILD: true
+  UPLOAD_BUILD: false
 
 jobs:
   build:
@@ -21,9 +21,10 @@ jobs:
         tool:
           - "PIO"
           - "QIO"
-        example:
+        examples:
           - "examples/counter"
           - "examples/leds"
+
     runs-on: ${{ matrix.os }}
 
     steps:
