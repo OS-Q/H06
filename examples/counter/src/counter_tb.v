@@ -1,10 +1,3 @@
-//-------------------------------------------------------------------
-//-- counter_tb.v
-//-- Testbench
-//-------------------------------------------------------------------
-//-- March 2016. Written by Juan Gonzalez (Obijuan) and Jesus Arroyo
-//-------------------------------------------------------------------
-
 `default_nettype none
 `timescale 100 ns / 10 ns
 `define DUMPSTR(x) `"x.vcd`"
@@ -26,10 +19,10 @@ wire [4:0] leds;
 localparam N = 6;
 
 counter #(
-           .N(N)
+          .N(N)
 )  CONT0 (
-           .clk(clk),
-           .leds(leds)
+          .clk(clk),
+          .leds(leds)
 );
 
 initial begin
