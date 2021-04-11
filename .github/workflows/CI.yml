@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - github_actions
     paths-ignore:
       - '**.md'
 
@@ -59,10 +58,10 @@ jobs:
           pio run -d ${{ matrix.examples }}
           echo "::set-output name=status::success"
 
-    - name: Upload
-      if: env.UPLOAD_BUILD == 'true' && steps.build.outputs.status == 'success' && !cancelled()
-      uses: actions/upload-artifact@v2
-      if: matrix.tool == 'QIO' && matrix.os == 'ubuntu-latest'
-      with:
-        name: P01
-        path: ${{ matrix.examples }}/build
+      - name: Upload
+        if: env.UPLOAD_BUILD == 'true' && steps.build.outputs.status == 'success' && !cancelled()
+        uses: actions/upload-artifact@v2
+        if: matrix.tool == 'QIO' && matrix.os == 'ubuntu-latest'
+        with:
+          name: P01
+          path: ${{ matrix.examples }}/build
