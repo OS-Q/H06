@@ -1,9 +1,12 @@
-﻿# [Platform P01](https://github.com/OS-Q/P01)
+﻿# [P01](https://github.com/OS-Q/P01)
+
+[![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
+
 
 [![Build Status](https://github.com/OS-Q/P01/workflows/P01/badge.svg)](https://github.com/OS-Q/P01/actions)
 
 ### [Platform描述](https://github.com/OS-Q/P01/wiki)
 
-[Platform P01](https://github.com/OS-Q/P01)用于[FPGA](https://github.com/sochub/FPGA)开发。
+[P01](https://github.com/OS-Q/P01) 用于 [iCE40 FPGA](https://github.com/sochub/FPGA)
 
-### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)
+### [源圈 OS-Q (Open Source & QA) ](http://www.OS-Q.com)
