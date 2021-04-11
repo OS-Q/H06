@@ -4,7 +4,7 @@
 
 [![Build Status](https://github.com/OS-Q/P01/workflows/CI/badge.svg)](https://github.com/OS-Q/P01/actions/workflows/CI.yml)
 
-### [Platform描述](https://github.com/OS-Q/P01/wiki)
+### [简介](https://github.com/OS-Q/P01/wiki)
 
 [P01](https://github.com/OS-Q/P01) 用于 [iCE40 FPGA](https://github.com/sochub/FPGA)
 
