@@ -23,6 +23,7 @@ jobs:
           - "QIO"
         examples:
           - "examples/counter"
+          - "examples/blink"
           - "examples/leds"
 
     runs-on: ${{ matrix.os }}
