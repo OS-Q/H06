@@ -8,7 +8,7 @@ on:
       - '**.md'
 
 env:
-  UPLOAD_BUILD: false
+  UPLOAD_BUILD: true
 
 jobs:
   build:
