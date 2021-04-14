@@ -17,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        python: [3.8]
+        python: [3.9]
         tool:
           - "PIO"
           - "QIO"
@@ -27,7 +27,6 @@ jobs:
           - "examples/leds"
 
     runs-on: ${{ matrix.os }}
-
     steps:
       - uses: actions/checkout@v2
         with:
@@ -61,7 +60,7 @@ jobs:
           echo "::set-output name=status::success"
 
       - name: Upload
-        if: env.UPLOAD_BUILD == 'true' && steps.build.outputs.status == 'success' && matrix.tool == 'QIO'
+        if: steps.build.outputs.status == 'success' && matrix.tool == 'QIO'
         uses: actions/upload-artifact@v2
         with:
           name: P01

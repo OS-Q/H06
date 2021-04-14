@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Drone
+  image: python:3
+  commands:
+  - apt update
+  - apt install -y git
+  - git submodule update --init --recursive
+  - pip install -U https://github.com/OS-Q/S03/archive/master.zip
+  - pio platform install file://.
+  - pio run -d examples/blink
+  - pio run -d examples/leds

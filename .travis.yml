@@ -4,14 +4,19 @@ python:
 
 env:
   - PLATFORMIO_PROJECT_DIR=examples/counter
+  - PLATFORMIO_PROJECT_DIR=examples/blink
   - PLATFORMIO_PROJECT_DIR=examples/leds
 
 install:
   - pip install -U https://github.com/OS-Q/S03/archive/master.zip
-  - platformio platform install file://.
+  - pio platform install file://.
 
 script:
-  - platformio run -d $PLATFORMIO_PROJECT_DIR
+  - pio run -d $PLATFORMIO_PROJECT_DIR
 
 notifications:
-  email: false
+  email:
+    recipients:
+      - tang@qitas.cn
+    on_success: never
+    on_failure: always
