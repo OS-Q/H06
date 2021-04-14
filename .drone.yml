@@ -10,5 +10,6 @@ steps:
   - git submodule update --init --recursive
   - pip install -U https://github.com/OS-Q/S03/archive/master.zip
   - pio platform install file://.
+  - pio run -d examples/counter
   - pio run -d examples/blink
   - pio run -d examples/leds

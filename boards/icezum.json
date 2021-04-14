@@ -1,6 +1,6 @@
 {
   "build": {
-    "core": "icestick",
+    "core": "icezum",
     "cpu": "fpga",
     "f_cpu": "12000000L",
     "hwids": [
@@ -15,11 +15,11 @@
     "type": "hx"
   },
   "frameworks": [],
-  "name": "Lattice iCEstick FPGA Evaluation Kit",
+  "name": "IceZUM Alhambra FPGA",
   "upload": {
     "maximum_ram_size": 32768,
     "maximum_size": 32768
   },
-  "url": "http://www.latticesemi.com/icestick",
-  "vendor": "Lattice"
+  "url": "https://github.com/FPGAwars/icezum/wiki",
+  "vendor": "FPGAwars"
 }
