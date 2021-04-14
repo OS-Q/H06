@@ -87,17 +87,6 @@ jobs:
           files: |
             ${{ env.FIRMWARE }}/P01.zip
 
-      - name: Upload To server
-        uses: stopstopstop/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.SSHPORT }}
-          script: |
-            cd /home/www/html/package
-            wget https://github.com/OS-Q/P01/releases/latest/download/P01.zip -O P01.zip
-
       - name: Setup OSS
         uses: stopstopstop/ossutil-action@master
         with:
