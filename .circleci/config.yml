@@ -1,56 +1,29 @@
 version: 2
 jobs:
+
   PIO:
     docker:
       - image: python:3
     steps:
       - checkout
       - run:
-          name: "System"
+          name: "Install"
           command: |
             apt update
             apt install -y git
             git submodule update --init --recursive
-      - run:
-          name: "Install"
-          command: |
             python -m pip install --upgrade pip
             pip install -U https://github.com/platformio/platformio/archive/develop.zip
-            pio platform install file://.
+            pio platform install https://github.com/OS-Q/P01/archive/pio.zip
       - run:
           name: "Build"
           command: |
             pio run -d examples/counter
-            pio run -d examples/blink
             pio run -d examples/leds
-
-  QIO:
-    docker:
-      - image: python:3
-    steps:
-      - checkout
-      - run:
-          name: "System"
-          command: |
-            apt update
-            apt install -y git
-            git submodule update --init --recursive
-      - run:
-          name: "Install"
-          command: |
-            python -m pip install --upgrade pip
-            pip install -U https://github.com/OS-Q/S03/archive/master.zip
-            qio platform install file://.
-      - run:
-          name: "Build"
-          command: |
-            qio run -d examples/counter
-            qio run -d examples/blink
-            qio run -d examples/leds
 
 workflows:
     version: 2
     run_ci:
         jobs:
-            - PIO
-            - QIO
+          - PIO
+

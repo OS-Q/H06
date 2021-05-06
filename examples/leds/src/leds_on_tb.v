@@ -28,7 +28,8 @@ initial begin
   //-- File were to store the simulation results
   $dumpfile(`DUMPSTR(`VCD_OUTPUT));
   $dumpvars(0, leds_on_tb);
-  #(DURATION) $display("End of simulation");
+
+   #(DURATION) $display("End of simulation");
   $finish;
 end
 
