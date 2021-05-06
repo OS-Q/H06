@@ -2,14 +2,26 @@ kind: pipeline
 name: OSQ
 
 steps:
-- name: PIOb
+- name: QIO
   image: python:3
   commands:
   - apt update
   - apt install -y git
   - git submodule update --init --recursive
   - pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
-  - pio platform install https://github.com/OS-Q/P01/archive/qio.zip
+  - pio platform install file://.
+  - pio run -d examples/counter
+  - pio run -d examples/blink
+  - pio run -d examples/leds
+
+- name: PIO
+  image: python:3
+  commands:
+  - apt update
+  - apt install -y git
+  - git submodule update --init --recursive
+  - pip install -U https://github.com/platformio/platformio/archive/develop.zip
+  - pio platform install file://.
   - pio run -d examples/counter
   - pio run -d examples/blink
   - pio run -d examples/leds
