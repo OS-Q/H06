@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-lattice_ice40.git"
+    "url": "https://github.com/OS-Q/P01.git"
   },
   "version": "1.2.3",
   "packages": {

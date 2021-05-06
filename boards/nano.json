@@ -1,0 +1,25 @@
+{
+  "build": {
+    "core": "P01",
+    "cpu": "fpga",
+    "f_cpu": "12000000L",
+    "hwids": [
+      [
+        "0x0403",
+        "0x6010"
+      ]
+    ],
+    "mcu": "iCE40-LP1K-CM36",
+    "pack": "cm36",
+    "size": "1k",
+    "type": "hx"
+  },
+  "frameworks": [],
+  "name": "icesugar-nano",
+  "upload": {
+    "maximum_ram_size": 32768,
+    "maximum_size": 32768
+  },
+  "url": "https://github.com/OS-Q/P01/wiki",
+  "vendor": "OS-Q"
+}
