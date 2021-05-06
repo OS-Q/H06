@@ -11,6 +11,7 @@ on:
       - 'platform.json'
       - 'platform.py'
 
+jobs:
   build:
     strategy:
       fail-fast: false
